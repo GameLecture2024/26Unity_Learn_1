@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\dev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\dev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +50,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Contents",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Contents.csproj",
+              "RelativeDocumentMoniker": "Contents\\Contents.csproj",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Contents.csproj",
+              "RelativeToolTip": "Contents\\Contents.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-11T08:10:57.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dev",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
+              "RelativeDocumentMoniker": "Dev\\Dev.csproj",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
+              "RelativeToolTip": "Dev\\Dev.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-11T08:06:50.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameData.cs",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\GameData.cs",
+              "RelativeDocumentMoniker": "Contents\\GameData.cs",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\GameData.cs",
+              "RelativeToolTip": "Contents\\GameData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA0wA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-11T07:42:27.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeDocumentMoniker": "Dev\\Program.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeToolTip": "Dev\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAAAAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAA0wFEAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T08:34:43.667Z",
               "EditorCaption": ""

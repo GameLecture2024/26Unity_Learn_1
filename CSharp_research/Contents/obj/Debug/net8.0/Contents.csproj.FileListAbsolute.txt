@@ -1,0 +1,15 @@
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\bin\Debug\net8.0\Contents.deps.json
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\bin\Debug\net8.0\Contents.dll
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\bin\Debug\net8.0\Contents.pdb
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.GeneratedMSBuildEditorConfig.editorconfig
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.AssemblyInfoInputs.cache
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.AssemblyInfo.cs
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.csproj.CoreCompileInputs.cache
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.sourcelink.json
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.dll
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\refint\Contents.dll
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\Contents.pdb
+D:\KDH6\26Unity_Learn_1\CSharp_research\Contents\obj\Debug\net8.0\ref\Contents.dll
+D:\KDH6\26Unity_Learn_1\Output\lib\Debug\net8.0\Contents.deps.json
+D:\KDH6\26Unity_Learn_1\Output\lib\Debug\net8.0\Contents.dll
+D:\KDH6\26Unity_Learn_1\Output\lib\Debug\net8.0\Contents.pdb

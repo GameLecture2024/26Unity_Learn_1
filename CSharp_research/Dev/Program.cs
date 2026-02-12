@@ -7,89 +7,94 @@ namespace Dev
     {
         static void Main(string[] args)
         {
-            // 한글. -> Encoding -> EUC_KR(949) 사인UTF-8(65001) 
-            // 글 -> github 
+            // string format
+            int day = 0;
+            // $ 문자열 보간.
+            Console.WriteLine($"Day-{day}");
 
-            GameData gameData = new GameData();
-            gameData._hp = 10;
-            gameData._level = 1;
-            gameData._templateID = 15;
+            // 논리 연산
+            // and or
 
-            // 데이터 형식
-            // 1. 정수
+            bool IsCoolTimeFinished = true;
+            bool IsResourceEnough = true;
+            bool IsRanged = true;
+            bool IsAlive = true;
 
+            // bool 조건을 실제로 판별하는 코드
+
+            bool IsSkillAvailabe = IsCoolTimeFinished && IsResourceEnough && IsRanged && IsAlive;
+
+            if (IsSkillAvailabe)
             {
-                int a = 100;    // 4바이트 8비트 = 32
-                Int64 ab = 50;
+
             }
 
-            // 2. 실수 부동소수점.
-            // 추정치 표현 값. 최대의 소수점까지만 표현한다. 1/3 = 0.333333|   3333  |무한.
+            // 비교 연산
+
+            int monsterDistance = 3;
+            int weaponRanged = 5;
+            IsRanged = (monsterDistance < weaponRanged);
+
+            // 삼항 연산자
+
+            // 타입 변수 = [ 조건 bool타입] = true false ?   [ 들어갈 타입 ] : [들어갈 타입];
+
+            int count = day > 1 ? 8 : 0;
+            Console.WriteLine($"현재 학생 수 : {count}");
+
+            // 산술 연산 
+            // + - x * %
+
             {
-                float a = 3.14f;
-                double ab = 3.14;
+                int num = 2 + 3 * 5;
+                int dividedCount = num / 3;  // 몫
+                int remain = num % 3;
 
-                if(a == ab)
-                {
-                    Console.WriteLine("같다");
-                }
-                else
-                {
-                    Console.WriteLine("다르다");
-                }
+                Console.WriteLine($"몫 : {dividedCount} 나머지 :{remain}");
 
-                // 실수의 계산과 정수의 계산을 비교하는 행위 실수의 원인이 된다.
-                if (2 == 1.9 + 0.1) ;  // 1.90000000000000001 0.10000000000000000001 = 2.00000000001
+                // 3 2배곱한 값을 얻을려면 어떻게 하면좋을까?
             }
 
-            // 3. 불리언 (boolean)
-            // 게임 사용. 어떤 식으로 사용하면 좋을까?
-           
+            // 캐스팅 cast - 형변환
             {
-                bool isQuestComplete = false;  // 선언 파트   
+                int hp = 10;
+                int maxHp = 20;
+                double hpbar = (double)hp / maxHp;
 
-                /*
-                 *  퀘스트를 클리어 했다. 코드
-                 */
-                isQuestComplete = true; //  사용 파트
+                Console.WriteLine($"현재 체력 바 : {hpbar * 100}%");
+                // static_cast
+                // 다른 타입의 변환은 어떻게 해야 할까?
+                // dynamic_cast -> 클래스. 상속. virtual. => is, as
 
-                if (isQuestComplete)
-                {
-                    Console.WriteLine("퀘스트 클리어");
-                }
+                // 숫자 -> 문자 바꾸는 방법.
             }
 
-            // 4. 문자열 string
-            // C# -> c++ -> C# 똑같다.
-            // 조건을 만족했다. c++ 개발자 자유도 많다. vs c# Fixed, 
-            // 암기를 하려는 사람들이 아니다.
-            // char x 10 =  10.  -> 20
-            // 1바이트.128개 2바이트. 32,767 
-            // 포인터 사용 하지마! << 버그. 접근할 수 없어야 하는 코드. 포인터로 접근을 해서 사용. 
-            // stack, heap 참조 타입, 값 타입. CPU 너 몰라도 돼. => 두고두고 설명.
-
-            // 문자열 보간. 
-
+            // 3.  "3" 뭐가 다를까? 주소로 저장된 녀석.
+            // 주력 언어. 용어 잘 정리해야한다.
+            // 포인터. C# 포인터가 없다. C# 주소를 어떻게 처리할까?
+            // object 전부다 시작한다. -> value타입?  reference 타입?
+            // int 어떤 타입?     v
+            // struct 어떤 타입?  v
+            // class 어떤 타입?   r
             {
-                char a = 'a';
+                Console.WriteLine(3  + 3.ToString());
+                Console.WriteLine(3+3);
 
-                Console.WriteLine(sizeof(char));
+                Int32 abc = 10;
 
-                string name = "aabbcc";
-                
-                Console.WriteLine("이름 출력 : " + name);
+                // C# object 기본 타입. 뭐든지 될 수 있다.
+                // c, C++ => C# 쉽다.
+                // struct -> 참조. value선언을 하지도 않았는데 왜 ??
 
-                // printf(" %f ", name)
-                // 이게 어떻게 가능하지? 실력을 판단. 
-
-                Console.WriteLine(string.Format("이름 {0} 출력 : ", name)); 
-                Console.WriteLine($"이름 출력 : {name}");
+                // C# [박싱 언박싱]   =>  value => 메모리 힙에다가 저장.
+                // Generic 박싱 언박싱 비용이 정말 많이 듭니다.
+                // stack - 로컬 변수      : { } 소멸
+                // heap  - 포인터 쓴 변수 : 남는다. 포인터.
+                object o = (object)abc;
+                int myInt = (int)o;
 
             }
 
         }
-
-        // namespace
-        // My.이순신  2번.이순신      이순신님 있으신가요?  구별하는 방법?  
     }
 }

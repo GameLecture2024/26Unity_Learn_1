@@ -1,97 +1,109 @@
 using Contents;
-using System;  // #include "contents.h"
+using System.Security.Cryptography;
+// #include "contents.h"
 
 namespace Dev
 {
     internal class Program
     {
+        public enum MonsterType
+        {
+            HUMAN,
+            ROBOT
+        }
+
+        static MonsterType _monsterType;
+
+
+        // C# 왜 개발했나? 플랫폼 문제 해결.
+
         static void Main(string[] args)
         {
-            // string format
-            int day = 0;
-            // $ 문자열 보간.
-            Console.WriteLine($"Day-{day}");
+            // 필요한 코드를 작성하려면 #include..
+            // 기본 내장이 되어있다. 시스템 경로. Windows.kit < >  " "
+            // .Net 8 - 프레임 워크
+            // 실제 코드 뭉치들. 
+            // 엔진( ) - 너가 비용주고 써 vs open source
+            // 컨텐츠 개발.
 
-            // 논리 연산
-            // and or
-
-            bool IsCoolTimeFinished = true;
-            bool IsResourceEnough = true;
-            bool IsRanged = true;
-            bool IsAlive = true;
-
-            // bool 조건을 실제로 판별하는 코드
-
-            bool IsSkillAvailabe = IsCoolTimeFinished && IsResourceEnough && IsRanged && IsAlive;
-
-            if (IsSkillAvailabe)
+            // object
             {
+                // 메모리 사용. reference 타입 - heap 저장.
+                
+                // Garbage Collector  (GC)
+                // heap - 더 이상 사용하지 못하는 정보를 관측해서 지운다.
+                // GC가 쓰레기값을 인지하는 방법이 무엇일까? [ stack  ]     [ heap ]
+                // stack에서 heap가리키지 않고 있다. 
+                // GC 지원하는 언어. managed language (포인터 안씀)
+                // 포인터. 참조타입을 마구잡이로 막 써도 되나? 안되겠다. -> [1  ]  [  ]  [  ]  [  ]
+            }
+
+            // 배열 - 자료구조
+            // 왜 쓰는가? 
+
+            {
+                int[] array2 = new int[] { 1, 2 };
+                int[] array3 = new int[100];
+                int[,] d2array = new int[10, 10];
+            }
+
+            // 자료의 흐름. 
+            
+            {
+                // 어떻게 사용해? 
+                // 반복문 하지뭐.
+                // 배열이 가져야 할 변수. 너가 지금 몇개나 가지고 있니? size();
+
+                int[] array2 = { 1, 2, 3 };
+
+                for (int i = 0; i < array2.Length; i++)
+                {
+                    Console.WriteLine($"[{i+1}]번째 배열의 값 : {array2[i]}");
+                }
+
+                
+            }
+
+            // 조건문 반복문
+
+            // if, else
+            // switch
+            // 1> switch 값이 딱 떨어질 때 쓰자.
+            // num 0,1,2 => enum
+            {
+                switch (_monsterType)
+                {
+                    case MonsterType.HUMAN:
+                        break;
+                    case MonsterType.ROBOT:
+                        break;
+                }
+            }
+            // 반복문
+            {
+
+                int count = 1;
+                
+                // 초기화가 필요한 코드.
+                do
+                {
+                    Console.WriteLine("코드 실행");
+                    // 그러한 코드를 작성을 하라.
+                } while (count > 2);
 
             }
 
-            // 비교 연산
-
-            int monsterDistance = 3;
-            int weaponRanged = 5;
-            IsRanged = (monsterDistance < weaponRanged);
-
-            // 삼항 연산자
-
-            // 타입 변수 = [ 조건 bool타입] = true false ?   [ 들어갈 타입 ] : [들어갈 타입];
-
-            int count = day > 1 ? 8 : 0;
-            Console.WriteLine($"현재 학생 수 : {count}");
-
-            // 산술 연산 
-            // + - x * %
-
+            // eunm(열거형) 상수형
             {
-                int num = 2 + 3 * 5;
-                int dividedCount = num / 3;  // 몫
-                int remain = num % 3;
 
-                Console.WriteLine($"몫 : {dividedCount} 나머지 :{remain}");
+                // enum을 왜 쓰는가?
+                // 전부다 상수로 표현하니간 비슷한대, 이름이 겹치는 문제가 생긴다.
 
-                // 3 2배곱한 값을 얻을려면 어떻게 하면좋을까?
-            }
+                Console.WriteLine($"나의 몬스터 타입 : {_monsterType.ToString()}"); 
+                
+                string Name = _monsterType.ToString();
 
-            // 캐스팅 cast - 형변환
-            {
-                int hp = 10;
-                int maxHp = 20;
-                double hpbar = (double)hp / maxHp;
-
-                Console.WriteLine($"현재 체력 바 : {hpbar * 100}%");
-                // static_cast
-                // 다른 타입의 변환은 어떻게 해야 할까?
-                // dynamic_cast -> 클래스. 상속. virtual. => is, as
-
-                // 숫자 -> 문자 바꾸는 방법.
-            }
-
-            // 3.  "3" 뭐가 다를까? 주소로 저장된 녀석.
-            // 주력 언어. 용어 잘 정리해야한다.
-            // 포인터. C# 포인터가 없다. C# 주소를 어떻게 처리할까?
-            // object 전부다 시작한다. -> value타입?  reference 타입?
-            // int 어떤 타입?     v
-            // struct 어떤 타입?  v
-            // class 어떤 타입?   r
-            {
-                Console.WriteLine(3  + 3.ToString());
-                Console.WriteLine(3+3);
-
-                Int32 abc = 10;
-
-                // C# object 기본 타입. 뭐든지 될 수 있다.
-                // c, C++ => C# 쉽다.
-                // struct -> 참조. value선언을 하지도 않았는데 왜 ??
-
-                // C# [박싱 언박싱]   =>  value => 메모리 힙에다가 저장.
-                // Generic 박싱 언박싱 비용이 정말 많이 듭니다.
-                // stack - 로컬 변수      : { } 소멸
-                // heap  - 포인터 쓴 변수 : 남는다. 포인터.
-                object o = (object)abc;
-                int myInt = (int)o;
+                // 에디터 툴. 타입. 문자열 전달해가지고 알아서 판별하는 코드.
 
             }
 

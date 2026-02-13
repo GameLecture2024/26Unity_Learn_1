@@ -11,12 +11,15 @@
       "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\dev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\dev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\KDH6\\26Unity_Learn_1\\Output\\Debug\\net8.0\\GameBat.bat||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\contents.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +53,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "GameBat.bat",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\Output\\Debug\\net8.0\\GameBat.bat",
+              "RelativeDocumentMoniker": "..\\Output\\Debug\\net8.0\\GameBat.bat",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\Output\\Debug\\net8.0\\GameBat.bat",
+              "RelativeToolTip": "..\\Output\\Debug\\net8.0\\GameBat.bat",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000614|",
+              "WhenOpened": "2026-02-13T08:40:39.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Contents",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Contents.csproj",
               "RelativeDocumentMoniker": "Contents\\Contents.csproj",
@@ -61,14 +77,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Dev",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
               "RelativeDocumentMoniker": "Dev\\Dev.csproj",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
               "RelativeToolTip": "Dev\\Dev.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-11T08:06:50.948Z"
+              "WhenOpened": "2026-02-11T08:06:50.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,7 +97,8 @@
               "RelativeToolTip": "Contents\\GameData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAA0wA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:42:27.024Z"
+              "WhenOpened": "2026-02-11T07:42:27.024Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,7 +108,7 @@
               "RelativeDocumentMoniker": "Dev\\Program.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeToolTip": "Dev\\Program.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAABMAAAAYAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAA0wB0AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T08:34:43.667Z",
               "EditorCaption": ""

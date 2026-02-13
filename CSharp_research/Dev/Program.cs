@@ -1,6 +1,4 @@
 using Contents;
-using static System.Net.Mime.MediaTypeNames;
-
 // #include "contents.h"
 
 namespace Dev
@@ -10,95 +8,50 @@ namespace Dev
 
     internal class Program
     {
+        // 함수를 심화.
+
+        // [반환] [Main](Param : string[]  args)
+        // Main      :  특별한 이름으로 특별한 기능
+        // string[]  :  문자열 배열    {"AAAA", "BBBB", "CCCC"} { }
+        // Main 붙어있는 parameter를 어떻게 쓰면 좋을까?
+
         static void Main(string[] args)
         {
-            // 함수   (Function) cpp
-            // 외부에서 독립적으로 사용 - 전역
-            // 메서드 (method) c#
-            // 클래스 내부에 있는 함수  - 집합
+            // args 인자가 몇개가 있을까요?
+            // size만큼, 정해지지 않음.
+            // 인자 0개. 인자를 전달해서 실행하는 방법이 있지 않을까?
+
+            // main이 종료가 안되게 하는 방법?
+
+            // 파일을 실행하라. -v "메모장.txt" 외부 파일 이름 + 확장자 받아온다.
+            // 메모장 안에 있는 내용물을 가져오자. 
+            // 사용 설명서
+            // 방향키 wasd,  키보드 화살표,  ijkl.
+            // 메모장. 
+
+            // .bat 이용해서 받아온 문자열을 확장자까지 받아온 다음에
+            // 그 확장자를 string 출력을 해보세요.
+            // gameSetting.txt -> 이 텍스트 파일을 열어서 안에 있는 데이터를 가져올 수 있을까?
+
+            Console.WriteLine("프로그램 시작!");
+
+            if(args.Length > 0)
             {
-                Study();
+                Console.WriteLine($"메인 함수의 매개 변수를 사용해보자 {args[0]}"); // "텍스트"
+                string GameSetting = args[0];
+
+                // 원하는 실제 타입으로 변환. 결과물.
+
             }
+
+
+
+            Console.ReadLine();
+            //while (true)
+            //{
+            //   
+            //}
+
         }
-
-
-        // 이 코드를 함수로 만들어야 하나요?
-        private static void Study()
-        {
-            // 함수 사용
-            // Game Play.. 
-            // Game Data.. money.
-            int money = 1000;
-            float modifier = 3.1341345f;
-            Test();
-            money = Test2(money);
-            Console.WriteLine($"함수 오버로딩 테스트 : {Test2(15.15f)}");
-            Console.WriteLine($"실행 중인 상태의 돈의 크기 : {money}");
-            float f_res = 0;
-            money = Test3(money, modifier, out f_res);
-            Console.WriteLine($"소수점 결과 값 : {f_res}");
-        }
-
-        // 함수 선언
-        // override 다른거
-        // 오버로딩? overload
-        static void Test()
-        {
-            Console.WriteLine("반환 값이 없는 함수.");
-        }
-
-        // int money = money;
-        // 포인터. 메모리에 접근해서 값을 바꾸면 되겠다. 이 언어에서는 이 방법을 어떻게 사용하는가? => ref, out
-        static int Test2(int money)
-        {
-            int ret = 0;
-
-            ret = money;
-            ret *= 2;
-
-            // 할 것을 한다.
-            Console.WriteLine($"출력 : {ret}");
-
-            return ret;
-        }
-
-        static float Test2(float money)
-        {
-            float ret = 0;
-
-            ret = money;
-            ret *= 2;
-
-            // 할 것을 한다.
-            Console.WriteLine($"출력 : {ret}");
-
-            return ret;
-        }
-
-        // 계산 결과 중에 실제로 소수점 (float) 표현된 값도 우리가 알고 싶다.
-        // ref vs out : 매개변수로 받은 타입을 반환할 수 있게 하는 문법. 메모리에 접근해서 값을 바꾸는. 
-        // out : 너가 함수안에서 어떻게든 바꾼 값을 다시 쓸거라고 생각해서 만든거다. 
-
-
-        static int Test3(int money, float modifier, out float f_res)
-        {
-            int ret = 0;
-
-            ret = money;
-            float temp = money * modifier;
-            f_res = temp;
-            ret = (int)temp;
-
-            // 할 것을 한다.
-            Console.WriteLine($"초기 값 : {money} 가중치 : {modifier}, 최종 값[내림] : {ret}");
-
-            return ret;
-        }
-
-
-        // 함수를 왜 써야하는가? Why
-        // 재사용성. 반복적으로 작성하는 statement 함수로 만들어서 다시 쓸 수 있게 만든다.
-        // 어떤걸 함수로 만들어야 할까? What 
-        // 
     }
 }

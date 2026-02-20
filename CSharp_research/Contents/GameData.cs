@@ -15,5 +15,4 @@ namespace Contents
         public int _hp;
     }
 
-
 }

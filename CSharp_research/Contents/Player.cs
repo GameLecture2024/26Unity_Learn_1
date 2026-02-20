@@ -46,4 +46,28 @@
             SetInitData(100, 10);
         }
     }
+
+    public class Monk : Player 
+    {
+        public Monk() : base(PlayerType.Monk)
+        {
+            SetInitData(90, 8);
+        }
+    }
+    public class Rich : Player 
+    {
+        // ?? 속성
+
+        public Rich() : base(PlayerType.Rich)
+        {
+            SetInitData(50, 5);
+        }
+    }
+    public class Marin : Player
+    {
+        public Marin() : base(PlayerType.Marin)
+        {
+            SetInitData(80, 15);
+        }
+    }
 }

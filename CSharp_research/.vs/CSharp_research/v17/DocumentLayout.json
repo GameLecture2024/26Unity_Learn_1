@@ -11,12 +11,20 @@
       "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\contents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\contents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\dev.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\dev.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|solutionrelative:contents\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\contents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\contents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\dev.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -37,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,13 +69,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dev",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
+              "RelativeDocumentMoniker": "Dev\\Dev.csproj",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
+              "RelativeToolTip": "Dev\\Dev.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T08:39:58.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\GameManager.cs",
+              "RelativeDocumentMoniker": "Dev\\GameManager.cs",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\GameManager.cs",
+              "RelativeToolTip": "Dev\\GameManager.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAuwFIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T07:11:43.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeDocumentMoniker": "Dev\\Program.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeToolTip": "Dev\\Program.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwA4AAAAAAAAA",
+              "ViewState": "AQIAACIAAAAAAAAAAAA0wC0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T08:34:43.667Z",
               "EditorCaption": ""
@@ -80,14 +114,14 @@
               "RelativeDocumentMoniker": "Contents\\Player.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Player.cs",
               "RelativeToolTip": "Contents\\Player.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAkwDUAAAAfAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAYwDMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-20T08:06:34.083Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Contents.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Contents.cs",
               "RelativeDocumentMoniker": "Dev\\Contents.cs",
@@ -95,12 +129,11 @@
               "RelativeToolTip": "Dev\\Contents.cs",
               "ViewState": "AQIAAFwAAAAAAAAAAAAkwGYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T07:17:26.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T07:17:26.288Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "GameBat.bat",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\Output\\Debug\\net8.0\\GameBat.bat",
               "RelativeDocumentMoniker": "..\\Output\\Debug\\net8.0\\GameBat.bat",
@@ -112,29 +145,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Contents",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Contents.csproj",
               "RelativeDocumentMoniker": "Contents\\Contents.csproj",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Contents.csproj",
               "RelativeToolTip": "Contents\\Contents.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-11T08:10:57.01Z"
+              "WhenOpened": "2026-02-11T08:10:57.01Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Dev",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
               "RelativeDocumentMoniker": "Dev\\Dev.csproj",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Dev.csproj",
               "RelativeToolTip": "Dev\\Dev.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-11T08:06:50.948Z"
+              "WhenOpened": "2026-02-11T08:06:50.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameData.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\GameData.cs",
               "RelativeDocumentMoniker": "Contents\\GameData.cs",
@@ -142,7 +177,8 @@
               "RelativeToolTip": "Contents\\GameData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T07:42:27.024Z"
+              "WhenOpened": "2026-02-11T07:42:27.024Z",
+              "EditorCaption": ""
             }
           ]
         },

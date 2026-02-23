@@ -31,19 +31,46 @@
             this.attackPower = attackPower;
         }
 
+        #region 프로퍼티
+
         public int Hp { get { return hp; } }
         public int AttackPower
         {
             get { return attackPower; }
         }
 
+
+
+        #endregion
+
+        public virtual void Test()
+        {
+            Console.WriteLine("이것은 테스트 함수입니다.");
+            Console.WriteLine($"내가 선택한 직업 : {type.ToString()}");
+        }
+
+        public virtual void Attack(Player player)
+        {
+
+        }
+
     }
 
     public class Warrior : Player 
     {
+        int warriorStat = 10;
+
         public Warrior() : base(PlayerType.Warrior)
         {
             SetInitData(100, 10);
+        }
+
+        public override void Test()
+        {
+            base.Test();
+           
+
+            Console.WriteLine($"워리어 전용 스탯 : {warriorStat}");
         }
     }
 

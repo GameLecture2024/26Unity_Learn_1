@@ -1,4 +1,6 @@
-﻿namespace Contents
+﻿using System;
+
+namespace Contents
 {
     // 클래스 만드는 연습. 30분 ~ 1시간.
 
@@ -34,7 +36,8 @@
         public ElementType elementType;
     }
 
-    public class DamageProcessor // Helper class
+    // Helper class
+    public class DamageProcessor 
     {
         public Stat attackerStat;
         public Stat damagerStat;
@@ -44,10 +47,9 @@
             this.damagerStat = damagerStat;
         }
 
-        public static void Process(Stat attackerStat, Stat damagerStat) // 선택
+        public static void Process(IAttackable attacker, IDamagable damager) // 선택
         {
             bool isEvade;
-            bool isCrit;
 
             // 1. 회피 판정을 먼저 체크한다.
             isEvade = false;
@@ -56,18 +58,17 @@
             {
                 return;
             }
-            isCrit = true;
-            // 3. 데미지를 적용해라.
-            int finalDmg = 10;
-            finalDmg = isCrit ? finalDmg * attackerStat.crit_dmg : finalDmg;
-
-            Console.WriteLine($"최종 데미지 : {finalDmg}");
-            //Damage(finalDmg);
+            damager.Damage(attacker);
 
         }
     }
 
-    public class Player
+    // C# 다중 상속. - 죽은 다이아몬드.
+    // cpp 다중 상속을 지원하는 이유? A B C  
+    // interface 
+    // 플레이어에게 인터페이스를 부착한다. (attack, damage)
+
+    public class Player : IAttackable , IDamagable
     {
         // 방어력, 회피
         // 치명타 데미지, 치명타 확률 
@@ -79,9 +80,14 @@
         protected Stat stat;
         protected PlayerType type;
 
+     
+
         protected Player(PlayerType type) // 생성자를 protected 선언한다 ? 무슨 뜻일까? : 자식으로만 생성하고 싶다.
         {
             this.type = type;
+
+            // enum 상처입은 상태로 진입했다. if == 
+            // weight 함정의 종류에 따라서 시작하는 체력 비율. 0.5        
         }
 
         protected void SetInitData(Stat stat)
@@ -97,7 +103,9 @@
             get { return stat.attackPower; }
         }
 
+        public Stat Stat { get { return stat; } set { stat = value; } }
 
+        protected int CurrentHP { get; set; }
 
         #endregion
 
@@ -109,11 +117,32 @@
             Console.WriteLine($"체력 : {Hp}, 공격력 : {AttackPower}");
         }
 
-        public virtual void Attack(Player target)
-        {        
-            DamageProcessor.Process(stat, target.stat);
+        public void Attack(IDamagable target)
+        {
+            DamageProcessor.Process(this, target);
         }
 
+        public void Damage(IAttackable attacker)
+        {
+            // 플레이어에서 데미지를 입는 로직.
+            bool isCrit = false;
+            int critPercent = attacker.Stat.crit_percent;
+            
+            if(critPercent < 50)
+            {
+                isCrit = true;
+            }
+
+            // 1000줄.
+
+            int applyDmg = attacker.Stat.attackPower;
+            applyDmg = isCrit ? applyDmg * attacker.Stat.crit_dmg : applyDmg;
+            Console.WriteLine($"최종 데미지 : {applyDmg}");
+
+            CurrentHP -= Math.Clamp(applyDmg,0, Stat.hp);
+
+            Console.WriteLine($"현재 체력 비율 : {((float)CurrentHP / Stat.hp) * 100}%");
+        }
     }
 
     public class Warrior : Player 
@@ -125,8 +154,10 @@
             Stat stat = new Stat();
             stat.attackPower = 10;
             stat.hp = 100;
-            stat.crit_dmg = 2;
+            stat.crit_dmg = 10;
             SetInitData(stat);
+
+            CurrentHP = Stat.hp;
         }
 
         public override void Test()
@@ -147,6 +178,8 @@
             stat.hp = 90;
 
             SetInitData(stat);
+
+            CurrentHP = Stat.hp;
         }
     }
     public class Rich : Player 
@@ -160,6 +193,8 @@
             stat.hp = 50;
 
             SetInitData(stat);
+
+            CurrentHP = Stat.hp;
         }
     }
     public class Marin : Player
@@ -171,6 +206,8 @@
             stat.hp = 80;
 
             SetInitData(stat);
+
+            CurrentHP = Stat.hp;
         }
     }
 }

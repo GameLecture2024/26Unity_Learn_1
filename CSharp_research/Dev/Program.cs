@@ -9,17 +9,25 @@ namespace Dev
 
     internal class Program
     {
-        // 람다식
-        // 자료구조
-        // foreach
+        // 람다식 : 함수를 { } 생략해서 표현할 수 있는 방법.
+        // Delegate
+        // Func Action
+        // Event
+
+        // 왜 써야하나요? 
+        // 함수를 인자로 전달하는 녀석. 이게 가능하면 무엇을 할 수 있을까?
+        // 정렬. 어떤 순서? 수. 1 30 5 9 (방식 = 오름차순)
+        // Sort (    EQuery. 함수 )
+
+        // delegate 쓰기 너무 어렵다. 쫌 쉽게 사용하는 방법을 지원해줘.
+
+
         static void Main(string[] args)
-        {
-            // SomeFunc : 함수 인자가 int가 2개이고 ruturn 타입이 int인 함수를 인자로 받겠다.
-            // skill.Add
-            // () 3 + 4 <<= add 함수를 만들어야해요?
-            // 함수 인자로 받는 타입. 함수가 아닌 상태로 넘길 수 있을까? 람다식
-            // 회사 기본으로 원하는 실력.
-            Skill.SomeFunc((a, b) => a+b, 5, 10);
+        {          
+            Yogiyo yogiyo = new Yogiyo();
+            yogiyo.myFoodService("피자");
+            yogiyo.ServiceTest("치킨");
+
         }         
     }
 }

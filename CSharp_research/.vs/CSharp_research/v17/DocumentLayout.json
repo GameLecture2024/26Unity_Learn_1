@@ -7,16 +7,20 @@
       "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\ds_dev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\ds_dev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\yogiyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\yogiyo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9E9BBC76-2AB8-4192-91FA-4CF1196A2B27}|Dev\\Dev.csproj|solutionrelative:dev\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{49DED6D0-BF33-4C0F-B1A8-4B91CBBE42BA}|Contents\\Contents.csproj|d:\\kdh6\\26unity_learn_1\\csharp_research\\contents\\iattackable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 343,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -63,19 +67,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "DS_Dev.cs",
+              "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\DS_Dev.cs",
+              "RelativeDocumentMoniker": "Dev\\DS_Dev.cs",
+              "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\DS_Dev.cs",
+              "RelativeToolTip": "Dev\\DS_Dev.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAA3wGcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-03T07:22:43.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Yogiyo.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Yogiyo.cs",
               "RelativeDocumentMoniker": "Dev\\Yogiyo.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Yogiyo.cs",
               "RelativeToolTip": "Dev\\Yogiyo.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAqwCkAAAAfAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAqwCMAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-27T07:22:27.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Skill.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Skill.cs",
               "RelativeDocumentMoniker": "Dev\\Skill.cs",
@@ -83,12 +100,11 @@
               "RelativeToolTip": "Dev\\Skill.cs",
               "ViewState": "AQIAADAAAAAAAAAAAAAWwEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T07:17:00.831Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T07:17:00.831Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IAttackable.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\IAttackable.cs",
               "RelativeDocumentMoniker": "Contents\\IAttackable.cs",
@@ -100,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Contents.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Contents.cs",
               "RelativeDocumentMoniker": "Dev\\Contents.cs",
@@ -118,27 +134,27 @@
               "RelativeDocumentMoniker": "Dev\\Program.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\Program.cs",
               "RelativeToolTip": "Dev\\Program.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAA3wB0AAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAACsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-10T08:34:43.667Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\GameManager.cs",
               "RelativeDocumentMoniker": "Dev\\GameManager.cs",
               "ToolTip": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Dev\\GameManager.cs",
               "RelativeToolTip": "Dev\\GameManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAE0AAAAbAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA3wE0AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T07:33:30.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Player.cs",
               "DocumentMoniker": "D:\\KDH6\\26Unity_Learn_1\\CSharp_research\\Contents\\Player.cs",
               "RelativeDocumentMoniker": "Contents\\Player.cs",

@@ -9,25 +9,39 @@ namespace Dev
 
     internal class Program
     {
-        // 람다식 : 함수를 { } 생략해서 표현할 수 있는 방법.
-        // Delegate
-        // Func Action
-        // Event
+        // 자료구조. 
+        // 언제 쓰면 좋을까?
+        // 어디에 쓰일까
 
-        // 왜 써야하나요? 
-        // 함수를 인자로 전달하는 녀석. 이게 가능하면 무엇을 할 수 있을까?
-        // 정렬. 어떤 순서? 수. 1 30 5 9 (방식 = 오름차순)
-        // Sort (    EQuery. 함수 )
+        // 게임에서 이 자료구조 어디서 쓸까요?
+        // 만들고 싶은 기능.
 
-        // delegate 쓰기 너무 어렵다. 쫌 쉽게 사용하는 방법을 지원해줘.
 
 
         static void Main(string[] args)
-        {          
-            Yogiyo yogiyo = new Yogiyo();
-            yogiyo.myFoodService("피자");
-            yogiyo.ServiceTest("치킨");
+        {
+            var SomeDB = WeaponManager.Instance.WeaponDB;
 
+            // STL - Iterator 
+            // const auto& it 반복자
+            // interface IAttackable
+
+            // for( const ref : 클래스이름)
+            // { }
+
+            List<BaseAction> CachedActions = SomeDB["메이스"];
+
+            foreach(var action in CachedActions)
+            {
+                Console.WriteLine(action.ActionName);
+            }
+
+            // 다양한 스킬, 다양한 패턴, 다양한 무기, 다양한 아이템, .. 자료구조.
+            // 1개 스킬 1개 패턴 1무기 1아이템.
+
+            // 그 다음에 해야할 것?
+
+            // 필요한 데이터를 어떻게 꺼내올 것인가.
         }         
     }
 }

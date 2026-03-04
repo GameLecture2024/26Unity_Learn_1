@@ -1,3 +1,4 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,10 @@ namespace Dev
     {
         // 이 액션을 트리거 됐다. 총 방아쇠
         // Binding - Key
-        public string ActionName;
+        [JsonProperty("ActionName")]
+        public string ActionName { get; set; }
+        [JsonProperty("AttackPower")]
+        public int AttackPower { get; set; }
         public void OnActivate()
         {
 
@@ -46,8 +50,8 @@ namespace Dev
 
             List<BaseAction> tempActions = new List<BaseAction>();
 
-            BaseAction tempAction = new BaseAction("데미지 경감 액션");
-            BaseAction tempAction2 = new BaseAction("강력한 휘두르기 액션");
+            BaseAction tempAction = new BaseAction("데미지경감액션");
+            BaseAction tempAction2 = new BaseAction("강력한휘두르기액션");
 
             tempActions.Add(tempAction);
             tempActions.Add(tempAction2);

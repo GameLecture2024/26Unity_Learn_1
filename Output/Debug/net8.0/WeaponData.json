@@ -1,0 +1,10 @@
+{
+  "메이스": {
+    "ActionName": "강력한 공격, 데미지 경감",
+    "AttackPower": 10
+  },
+  "대검": {
+    "ActionName": "강력한 휘두르기, 순간이동",
+    "AttackPower": 5
+  }
+}

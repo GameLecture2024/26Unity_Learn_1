@@ -40,11 +40,14 @@ namespace Dev
 
             string JsonText = File.ReadAllText("WeaponData.json");
             Console.WriteLine(JsonText);
+            string CharacterJson = File.ReadAllText("Character.json");
+            Console.WriteLine(CharacterJson);
 
-            // 문자열 -> 필요없는 기호는 떼고 클래스 이름은 BaseAction 바꿔라.
+            // Item.  -> Enum => 무기, 방어구, 소모성 (포션)
 
-           
             var weaponData = JsonConvert.DeserializeObject<Dictionary<string, BaseAction>>(JsonText);
+
+            List<Character> CharacterDB = JsonConvert.DeserializeObject<List<Character>>(CharacterJson);
 
             foreach (var item in weaponData)
             {
@@ -54,6 +57,19 @@ namespace Dev
                 Console.WriteLine($"무기: {weaponName}, 스킬: {info.ActionName}, 공격력: {info.AttackPower}");
             }
 
+            // 150개. 150개데이터
+            // 원하는 데이터만 뽑아오는 방법
+            foreach(var character in CharacterDB)
+            {
+                Console.WriteLine($"직업 : {character.Job} 체력 : {character.hp}");
+
+                // FoundTarget
+                // 내가 찾고 싶은 데이터를 찾았으면 이제 이 루프를 종료하세요.
+                //if (FoundTarget) break;
+                CharacterManager.GetCharacterJob(character);
+            }
+
+            // LINQ   -  SQL  
             // Excel Data -> JSON 전달 -> 우리 게임의 Class, struct, List<Class> 변경할 수 있다.
             // 화면에 출력을 해보세요.
 

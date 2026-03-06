@@ -1,0 +1,29 @@
+[
+  {
+    "Job": "W",
+    "hp": 50,
+    "attackPower": 5,
+    "dfe": 15,
+    "evade": 0,
+    "crit_dmg": 2,
+    "crit_percent": 50
+  },
+  {
+    "Job": "A",
+    "hp": 30,
+    "attackPower": 12,
+    "dfe": 8,
+    "evade": 5,
+    "crit_dmg": 2,
+    "crit_percent": 50
+  },
+  {
+    "Job": "M",
+    "hp": 30,
+    "attackPower": 15,
+    "dfe": 5,
+    "evade": 5,
+    "crit_dmg": 2,
+    "crit_percent": 50
+  }
+]
